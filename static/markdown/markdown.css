@@ -1,0 +1,46 @@
+body{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+table caption{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+table td{
+    vertical-align: middle!important;
+}
+h1, h2{
+    text-align: center;
+}
+pre code{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    max-height: 300px;
+    overflow: auto;
+}
+pre.json{
+    max-height: 200px;
+    overflow: auto;
+}
+h3{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 40px;
+    color: #333333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: bold;
+}
+.btn-group{
+    position:fixed;
+    right: 10px;
+    top: 60px;
+    width: auto;
+    z-index: 999999;
+}
