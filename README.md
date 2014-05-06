@@ -22,3 +22,16 @@ pip install dateutil
 2. `/-1` browser last week's post
 3. `/md` preview markdown in html
 4. `/last` browser last week's post
+
+## Sync posts
+
+sync dir `posts/`
+
+1. [坚果云](http://jianguoyun.com)
+2. [Dropbox](https://dropbox.com)
+
+## TODO
+
+1. refactor code
+2. change web server to flask
+3. add README for `sync posts`
