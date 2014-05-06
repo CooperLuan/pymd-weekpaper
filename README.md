@@ -35,3 +35,21 @@ sync dir `posts/`
 1. refactor code
 2. change web server to flask
 3. add README for `sync posts`
+
+## supervisor
+
+```
+[program:WeekPaper]
+command=python /home/{you}/pymd-weekpaper/serve.py
+process_name=weekpaper                                                         
+numprocs=1
+directory=/home/{you}/pymd-weekpaper
+autostart=true
+autorestart=true
+startretries=3
+exitcodes=0,2
+stopsignal=TERM
+stopwaitsecs=10
+user={you}
+redirect_stderr=false     
+```
