@@ -111,6 +111,7 @@ if __name__ == "__main__":
         ],
         debug=True,
         static_path=os.path.join(os.path.dirname(__file__), 'static'),
+        template_path=os.path.join(os.path.dirname(__file__), 'templates')
     )
     application.listen(5566)
     tornado.ioloop.IOLoop.instance().start()

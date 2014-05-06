@@ -174,12 +174,12 @@ class MarkdownPreviewCommand():
             '<link rel="stylesheet" type="text/css" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css">',
             '<link rel="stylesheet" type="text/css" href="http://cdn.staticfile.org/font-awesome/4.0.3/css/font-awesome.min.css">',
             '<link rel="stylesheet" type="text/css" href="{0}markdown/markdown.css">'.format(settings['host']),
-            '<link rel="stylesheet" type="text/css" href="{0}highlight/highlight.css">'.format(settings['host']),
+            '<link rel="stylesheet" type="text/css" href="http://cdn.staticfile.org/highlight.js/8.0/styles/default.min.css">',
             '<link rel="stylesheet" type="text/css" href="/static/affix.css">',
             '<style type="text/css">body{padding-bottom: 200px;} pre code{max-height: 100%;}</style><style></style>'
         ])
         full_html += self.getCSS()
-        full_html += self.getHighlight()
+        # full_html += self.getHighlight()
         full_html += self.getMathJax()
         full_html += ('</head><body><div class="container-fluid">'
                       '<div class="row-fluid"><div class="span2" id="header"></div>'
@@ -187,9 +187,10 @@ class MarkdownPreviewCommand():
         full_html += markdown_html
         full_html += '</div></div></div>'
         full_html += ''.join([
-            '<script type="text/javascript" src="{0}jquery.js"></script>'.format(settings['host']),
+            '<script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>',
             '<script type="text/javascript" src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>',
-            '<script type="text/javascript" src="{0}highlight/highlight.min.js"></script>'.format(settings['host']),
+            # '<script type="text/javascript" src="{0}highlight/highlight.min.js"></script>'.format(settings['host']),
+            '<script type="text/javascript" src="http://cdn.staticfile.org/highlight.js/8.0/highlight.min.js"></script>',
             '<script type="text/javascript" src="{0}markdown/markdown.js"></script>'.format(settings['host']),
             '<script type="text/javascript" src="/static/affix.js"></script>',
             # '<script type="text/javascript">$(function() {emojify.run();})</script>'
