@@ -21,6 +21,9 @@ pre code{
     max-height: 300px;
     overflow: auto;
 }
+code{
+    font-size: 14px!important;
+}
 pre.json{
     max-height: 200px;
     overflow: auto;
